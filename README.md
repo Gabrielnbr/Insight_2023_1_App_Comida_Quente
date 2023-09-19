@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2023_01_App_Comida_Quente
 ==============================
 
@@ -55,3 +56,6 @@ Project Organization
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+=======
+# Insight_2023_1_App_Comida_Quente
+>>>>>>> be810d3eba0ed908e864a870c729d362551f2b33
