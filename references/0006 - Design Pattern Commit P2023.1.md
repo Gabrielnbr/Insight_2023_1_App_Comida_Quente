@@ -21,3 +21,4 @@ Aqui mostro quais textos serão utilizados nos commits do Git e qual sua finalid
 | refactor | Reestruturação do código para melhorar seu entendimento | refactor: código do mapa de restaurantes com melhor entendimento. |
 | style | Alterações que não afetam o significado do código, provavelmente relacionadas à formatação do código, como espaço em branco, falta de ponto e vírgula e assim por diante | style: limpeza no arquivo src\app\app_init.py |
 | update | Atualiza um componente ou recurso existente para melhorar algo nele | update: dashboard dos atendentes conforme v5.3.0 |
+| remove | remove arquivos seja de qualquer natureza | remove doc: src\visualisation\dashboard_vendedores.py
