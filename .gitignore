@@ -215,11 +215,10 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
->>>>>>> be810d3eba0ed908e864a870c729d362551f2b33
-<<<<<<< HEAD
 
 # Meus arquivos
 # Ambiente virtual
 23CQ
-=======
->>>>>>> 0048e8a7ecde5ec1d47c46a6918bac848436f9e4
+data
+docs
+models
