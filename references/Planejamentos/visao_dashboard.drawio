@@ -1,10 +1,73 @@
-<mxfile host="app.diagrams.net" modified="2023-10-10T02:05:16.540Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" version="21.7.2" etag="JvxaAMHdm7u3QLGlPNlV" type="github">
-  <diagram name="Página-1" id="F4dMy6gigTSSq5dXtoJS">
-    <mxGraphModel>
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram name="Página-1" id="F4dMy6gigTSSq5dXtoJS">
+        <mxGraphModel dx="1033" dy="480" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="1. Home Page" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="120" width="440" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Indicadores Gerais da Plataforma" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="160" width="320" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Mapa com o endereço de todos os restaurantes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="200" width="320" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Filtro Lateral:&lt;br&gt;1. Fltro por país&lt;br&gt;2. Download do DF" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="160" width="120" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="2. Página de Paises" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="120" width="440" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Histograma Quantidade de Restaurante x Pais" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="160" width="320" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Histograma Quantidade de Cidade x Pais" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="200" width="320" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Histograma Média de avaliações por país" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="240" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Histograma Média do valor para duas pessoas por país&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="880" y="240" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Filtro Lateral:&lt;br&gt;1. Filtro por país&lt;br&gt;2. Por avaliação" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="160" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="3.&amp;nbsp;Página de Cidades" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="360" width="440" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Top 10 cidades com mais restaurantes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="400" width="320" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Top 10 cidades com mais restaurantes e tipos culinários distintos" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="480" width="320" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Cidades com melhores médias de avaliação" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="440" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Cidades com piores médias de avaliação" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="440" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Filtro Lateral:&lt;br&gt;1. Filtro por país&lt;br&gt;2. Por avaliação" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="400" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="4.&amp;nbsp;Página de Cosinhas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="360" width="440" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="DF top 10 restaurantes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="400" width="320" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Top 10 melhores tipos de cozinhas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="440" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Top 10 piores tipos de cozinhas&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="880" y="440" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Filtro Lateral:&lt;br&gt;1. Filtro por país&lt;br&gt;2. Por avaliação" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="600" y="400" width="120" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>

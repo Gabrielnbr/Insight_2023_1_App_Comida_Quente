@@ -5,8 +5,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-from paginas.pagina_tratamento import get_data_transformed
-
 def indicador_qtde_total_votos(data):
     votos_totais = data['votes'].sum()
     st.metric(label = 'Total de Votos',
