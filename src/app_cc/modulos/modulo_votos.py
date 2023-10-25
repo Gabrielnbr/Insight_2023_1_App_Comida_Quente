@@ -1,3 +1,10 @@
+# Autor: Gabriel Nobre
+# Data: 25 de Outubro de 2023
+# Descrição: Este é um arquivo Python que contém funções relacionadas à página "Pagina Votos"
+# no aplicativo Streamlit. Ele define as funções que serão utilizadas pelo arquivo "pagina_votos.py"
+# para gerar os elementos de visualização da página, bem como seus filtros.
+# License: MIT License
+
 import streamlit as st
 import pandas as pd
 import numpy as np

@@ -1,11 +1,24 @@
+# Autor: Gabriel Nobre
+# Data: 25 de Outubro de 2023
+# Descrição: Este é um arquivo Python que contém funções relacionadas à página "Pagina de Tratamentos"
+# no aplicativo Streamlit. Ele define as funções que serão utilizadas pelo arquivo "pagina_tratamentos.py"
+# para tratamentos de valores categóricos no Dataframe.
+# License: MIT License
+
 import pandas as pd
 
 def get_rating_text():
     
     '''
-    Este método retorna um DataFrame com duas colunas.
+    Esta função gera um DataFrame com duas colunas,
+    com o ojetivo correlacionar palavras de linguagem estrangeira para linguegem PT-BR.
     A primeira é a avaliação textual nas linguas originais
     A segunda é a tradução e a readequação em escala para a língua portuguesa.
+    
+    Essa função não possui argumentos
+    
+    Return:
+        Dataframe.
     '''
     
     mudanca_rating_text = { 'Rating text': ['Average', 'Baik', 'Bardzo dobrze', 'Biasa', 'Bom', 'Bueno', 'Buono', 'Eccellente', 'Excelente', 'Excellent', 'Good', 'Harika', 'Muito Bom', 'Muito bom', 'Muy Bueno', 'Not rated', 'Poor', 'Sangat Baik', 'Skvělá volba', 'Skvělé', 'Terbaik', 'Velmi dobré', 'Very Good', 'Veľmi dobré', 'Vynikajúce', 'Wybitnie', 'Çok iyi', 'İyi'],
@@ -15,9 +28,15 @@ def get_rating_text():
 
 def get_rating_collors():
     '''
-    Este método retorna um Dataframe com duas colunas.
-    A primeira é o valor em hexa decimal das cores.
+    Esta função gera um Dataframe com duas colunas,
+    com o objetivo de correlacionar o valor da cor de hexadecimal em linguegem natural PT-BR.
+    A primeira é o valor em hexadecimal das cores.
     A segunda é o nome das cores.
+    
+    Essa função não possui argumentos
+    
+    Return:
+        Dataframe.
     '''
     
     cores_hex = {"Rating color": ["3F7E00", "5BA829", "9ACD32", "CDD614", "FFBA00", "CBCBC8", "FF7800"],

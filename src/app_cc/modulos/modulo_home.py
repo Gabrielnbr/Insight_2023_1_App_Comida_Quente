@@ -1,9 +1,15 @@
+# Autor: Gabriel Nobre
+# Data: 25 de Outubro de 2023
+# Descrição: Este é um arquivo Python que contém funções relacionadas à página "Pagina home"
+# no aplicativo Streamlit. Ele define as funções que serão utilizadas pelo arquivo "pagina_home.py"
+# para gerar os elementos de visualização da página, bem como seus filtros.
+# License: MIT License
+
 import folium
 
 import streamlit as st
 
 from folium.plugins import MarkerCluster
-from PIL import Image
 from streamlit_folium import folium_static
 
 def indicadores (data):
@@ -43,7 +49,7 @@ def indicadores (data):
                 )
 
 def map(data):
-    f = folium.Figure(width=1920, height=1080)
+    f = folium.Figure(width=1024 , height=768)
 
     m = folium.Map(max_bounds=True).add_to(f)
 

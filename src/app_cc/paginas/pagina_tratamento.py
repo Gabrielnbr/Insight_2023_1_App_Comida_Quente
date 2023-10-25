@@ -1,13 +1,17 @@
+# Autor: Gabriel Nobre
+# Data: 25 de Outubro de 2023
+# Descrição: Este é um arquivo Python que contém funções relacionadas à página "Pagina de Tratamentos"
+# no aplicativo Streamlit. Ele define a estrutura da página, bem como a inicialização
+# da página "Pagina de Tratamentos"
+# License: MIT License
+
 import inflection
-import datetime
-import pickle
 
 import pandas       as pd
-import numpy        as np
 import streamlit    as st
 
-from modulos import tratamento_numerico as tn
-from modulos import tratamento_categorico as tc
+from modulos import tratamento_numerico     as tn
+from modulos import tratamento_categorico   as tc
 
 def get_data_raw():
     data = pd.read_csv('src/data/raw/zomato.csv')
