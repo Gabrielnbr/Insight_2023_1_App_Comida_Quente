@@ -9,8 +9,8 @@ import streamlit            as st
 import modulos.modulo_votos as mv
 
 from paginas.pagina_tratamento import get_data_transformed
+from modulos.modulo_filtro import filtro_lateral
 
-# Desenha a página
 def apresentacao_votos(data):
     """
     Este método é responsável por organizar a estrutura da página de apresentação "Votos".
@@ -22,27 +22,23 @@ def apresentacao_votos(data):
     
     Esta função não possui retorno
     """
+    data = filtro_lateral(data)
     
-    st.header('Página de avaliação dos clientes', divider=True)
-    
-    data = mv.filtro_lateral(data)
-    
-    # 1º Linha - Inicadores dos votos 
+    # Linha 1 
     mv.layout_indicadores(data)
     
-    # Linha 2 - votoss x Pais
+    # Linha 2
     mv.layout_pais(data)
     
-    # Linha 3 - votos x Cidade
+    # Linha 3
     mv.layout_cidade(data)
     
-    # Linha 4 - votoss x Cozinhas
+    # Linha 4
     mv.layout_culinaria(data)
     
-    # Linha 5 - Tabelão
+    # Linha 5
     mv.tabelao(data)
 
-# Inicializa a página
 def app():
     """
     Este método é o responsável por inicializar a página votos no Streamlit.
@@ -50,6 +46,7 @@ def app():
     
     Essa função não possui nenhum argumento ou retorno.
     """
+    st.header("Página de Votos")
     
     data = get_data_transformed()
     

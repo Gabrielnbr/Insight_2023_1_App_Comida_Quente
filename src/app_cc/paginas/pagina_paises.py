@@ -7,6 +7,7 @@
 
 import streamlit as st
 import modulos.modolo_paises as mp
+import modulos.modulo_filtro as mf
 from paginas.pagina_tratamento import get_data_transformed
 
 def apresentacao_paises(data):
@@ -19,8 +20,17 @@ def apresentacao_paises(data):
         da função "get_data_transformed", cujo é acessado dentro da função app() neste mesmo arquivo.
     
     Esta função não possui retorno
-    """
-    st.header("Pagina dos paises1")
+    """    
+    data = mf.filtro_lateral(data)
+    
+    # Linha 1
+    mp.restaurante_pais_graph(data)
+    
+    # Linha 2
+    mp.cidade_pais_graph(data)
+    
+    # Linha 3
+    mp.mean_pais_graphs(data)
 
 def app():
     """
@@ -32,7 +42,5 @@ def app():
     st.header("Página dos Países")
     
     data = get_data_transformed()
-    
-    mp.filtro_lateral(data)
     
     apresentacao_paises(data)

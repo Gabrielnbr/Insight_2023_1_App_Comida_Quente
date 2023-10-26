@@ -5,12 +5,9 @@
 # para gerar os elementos de visualização da página, bem como seus filtros.
 # License: MIT License
 
-import streamlit as st
-import pandas as pd
-import numpy as np
-
-import matplotlib.pyplot as plt
-import plotly.express as px
+import numpy            as np
+import streamlit        as st
+import plotly.express   as px
 
 def indicador_qtde_total_votos(data):
     votos_totais = data['votes'].sum()
