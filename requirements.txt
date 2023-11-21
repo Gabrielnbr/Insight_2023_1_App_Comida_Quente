@@ -8,3 +8,4 @@ pil_plus == 0.2
 datetime == 5.2
 streamlit_folium == 0.13.0
 haversine == 2.8.0
+inflection==0.5.1
