@@ -5,10 +5,10 @@
 # da página "Pagina de Tratamentos"
 # License: MIT License
 
-import inflection
-
 import pandas       as pd
 import streamlit    as st
+
+import inflection
 
 from modulos import tratamento_numerico     as tn
 from modulos import tratamento_categorico   as tc
