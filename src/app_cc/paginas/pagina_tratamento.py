@@ -8,7 +8,7 @@
 import pandas       as pd
 import streamlit    as st
 
-import inflection
+import fn as fn
 
 from modulos import tratamento_numerico     as tn
 from modulos import tratamento_categorico   as tc
@@ -69,8 +69,8 @@ def drop_colunas_categoricas(data):
 
 def ajuste_colunas(dataframe):
     df = dataframe.copy()
-    title = lambda x: inflection.titleize(x)
-    snakecase = lambda x: inflection.underscore(x)
+    title = lambda x: fn.titleize(x)
+    snakecase = lambda x: fn.underscore(x)
     spaces = lambda x: x.replace(" ", "")
     cols_old = list(df.columns)
     cols_old = list(map(title, cols_old))
