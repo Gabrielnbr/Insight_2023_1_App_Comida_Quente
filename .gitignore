@@ -219,6 +219,5 @@ cython_debug/
 # Meus arquivos
 # Ambiente virtual
 23CQ
+# Data Raw
 data
-docs
-models
