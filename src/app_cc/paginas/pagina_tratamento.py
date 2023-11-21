@@ -8,7 +8,7 @@
 import pandas       as pd
 import streamlit    as st
 
-import fn as fn
+import inflection as fn
 
 from modulos import tratamento_numerico     as tn
 from modulos import tratamento_categorico   as tc
