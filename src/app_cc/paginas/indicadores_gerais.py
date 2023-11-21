@@ -1,18 +1,18 @@
 # Autor: Gabriel Nobre
-# Data: 25 de Outubro de 2023
-# Descrição: Este é um arquivo Python que contém funções relacionadas à página "Pagina Países"
+# Data: 20 de Novembro de 2023
+# Descrição: Este é um arquivo Python que contém funções relacionadas à página "Indicadores gerais"
 # no aplicativo Streamlit. Ele define a estrutura da página, bem como a inicialização
-# da página "Pagina Países"
+# da página "Indicadores gerais"
 # License: MIT License
 
 import streamlit as st
-import modulos.modolo_paises as mp
-import modulos.modulo_filtro as mf
 from paginas.pagina_tratamento import get_data_transformed
+import modulos.modulo_filtro as mf
+import modulos.modulo_indicadores_gerais as mig
 
-def apresentacao_paises(data):
+def apresentacao_home(data):
     """
-    Este método é responsável por organizar a estrutura da página de apresentação "Países".
+    Este método é responsável por organizar a estrutura da página de apresentação "Indicadores gerais".
     
     Args:
         data = DataFrame
@@ -21,24 +21,21 @@ def apresentacao_paises(data):
     
     Esta função não possui retorno
     """
-    
-    st.header("Página dos Países", divider= True)
+    st.header('Indicadores Gerais', divider=True)
     
     data = mf.filtro_lateral(data)
     
-    mp.restaurante_pais_graph(data)
+    mig.indicadores(data)
     
-    mp.cidade_pais_graph(data)
-    
-    mp.mean_pais_graphs(data)
+    mig.map(data)
 
 def app():
     """
-    Este método é o responsável por inicializar a página países no Streamlit.
-    Ele é chamado pelo arquivos app.py
+    Este método é o responsável por inicializar a página "Indicadores gerais" no Streamlit.
+    Ele é chamado pelo arquivo "app.py" 
     
     Essa função não possui nenhum argumento ou retorno.
     """
     data = get_data_transformed()
     
-    apresentacao_paises(data)   
+    apresentacao_home(data)

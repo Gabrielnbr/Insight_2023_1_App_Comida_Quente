@@ -62,13 +62,13 @@ def mean_pais_graphs(data):
     """
     vote_pais, prato2_pais = st.columns(2)
     
-    # 1º Coluna A média de votos por país
+    # 1º Coluna A média de avaliações por país
     with vote_pais:
         data_aux = data.loc[:,['votes','name_country']].groupby('name_country').mean().sort_values(by='votes', ascending = False).reset_index()
         fig_vote_pais = px.bar(data_aux,
                                 x='name_country',
                                 y='votes',
-                                title='Quantidade de votos por País', 
+                                title='A média de avaliações por país', 
                                 labels={'name_country': 'País', 'votes': 'Avaliações'})
         fig_vote_pais.update_traces(texttemplate = '%{y}')
         
@@ -80,7 +80,7 @@ def mean_pais_graphs(data):
         fig_prato2_pais = px.bar(data_aux,
                                 x='name_country',
                                 y='custo_para_dois_corrigido',
-                                title='Quantidade de votos por País', 
+                                title='A média do custo do prato para dois por país', 
                                 labels={'name_country': 'País', 'custo_para_dois_corrigido': 'Valor do prato para 2'})
         fig_prato2_pais.update_traces(texttemplate = '%{y}')
         

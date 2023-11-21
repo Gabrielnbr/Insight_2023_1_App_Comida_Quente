@@ -1,4 +1,6 @@
 import streamlit as st
+import numpy as np
+
 
 def filtro_lateral(data):
     """
@@ -11,9 +13,10 @@ def filtro_lateral(data):
         Dataframe filtrado
     """
     
-    st.header("Filtros")
-    
     with st.sidebar:
+        
+        st.header("Filtros")
+        st.subheader("Os filtros devem ser escolhidos na ordem disposta")
         
         multi_pais = st.multiselect('Pais', sorted(set(data['name_country'].unique())))
         if multi_pais != []:
@@ -32,5 +35,18 @@ def filtro_lateral(data):
             data = data.loc[data['cuisines'].isin(multi_culinaria)]
         else:
             data = data.copy()
-            
+        
+        slider_valor_min = data['custo_para_dois_corrigido'].min()
+        slider_valor_max = data['custo_para_dois_corrigido'].max()
+        slide_valor = st.slider("Valor médio para duas pessoas",
+                                min_value= slider_valor_min,
+                                max_value= slider_valor_max,
+                                value=(slider_valor_min,
+                                      slider_valor_max)
+                                )
+        
+        data = data[(data['custo_para_dois_corrigido'] >= slide_valor[0]) & (data['custo_para_dois_corrigido'] <= slide_valor[1])]
+        
+        
+        
     return data

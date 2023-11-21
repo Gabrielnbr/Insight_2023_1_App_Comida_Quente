@@ -6,8 +6,9 @@
 # License: MIT License
 
 import streamlit as st
-from paginas.pagina_tratamento import get_data_transformed
 import modulos.modulo_cozinhas as mc
+import modulos.modulo_filtro as mf
+from paginas.pagina_tratamento import get_data_transformed
 
 def apresentacao_cozinhas(data):
     """
@@ -22,9 +23,7 @@ def apresentacao_cozinhas(data):
     """
     st.header('Página de Cozinhas', divider=True)
     
-    st.subheader("Página de Cozinhas", divider=True)
-    
-    data = mc.filtro_lateral(data)
+    data = mf.filtro_lateral(data)
     
     mc.df_top_cozinhas(data)
     

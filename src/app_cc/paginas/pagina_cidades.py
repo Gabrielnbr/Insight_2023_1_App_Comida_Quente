@@ -6,8 +6,11 @@
 # License: MIT License
 
 import streamlit as st
+import modulos.modulo_cidades as mc
+import modulos.modulo_filtro as mf
+from paginas.pagina_tratamento import get_data_transformed
 
-def apresentacao_home (data):
+def apresentacao_cidades(data):
     """
     Este método é responsável por organizar a estrutura da página de apresentação "Cidades".
     
@@ -18,6 +21,12 @@ def apresentacao_home (data):
     
     Esta função não possui retorno
     """
+    
+    data = mf.filtro_lateral(data)
+    
+    mc.cidade_restaurante_graph(data)
+    
+    mc.min_max_restaurante_cidade(data)
 
 def app():
     """
@@ -26,4 +35,8 @@ def app():
     
     Essa função não possui nenhum argumento ou retorno.
     """
-    st.header('Página Cidade')
+    st.header('Página das Cidade', divider= True)
+    
+    data = get_data_transformed()
+    
+    apresentacao_cidades(data)  

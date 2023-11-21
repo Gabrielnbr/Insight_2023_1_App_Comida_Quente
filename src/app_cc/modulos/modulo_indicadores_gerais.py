@@ -1,7 +1,7 @@
 # Autor: Gabriel Nobre
 # Data: 25 de Outubro de 2023
-# Descrição: Este é um arquivo Python que contém funções relacionadas à página "Pagina home"
-# no aplicativo Streamlit. Ele define as funções que serão utilizadas pelo arquivo "pagina_home.py"
+# Descrição: Este é um arquivo Python que contém funções relacionadas à página "Indicadores Gerais"
+# no aplicativo Streamlit. Ele define as funções que serão utilizadas pelo arquivo "indicadores gerais.py"
 # para gerar os elementos de visualização da página, bem como seus filtros.
 # License: MIT License
 
@@ -22,34 +22,34 @@ def indicadores (data):
                 )
     
 
-        # Restaurante cadastrado
+    # Restaurante cadastrado
     restaurantes = len(data['restaurant_id'].unique())
     col2.metric(label = "Restaurantes Cadastrados",
                 value= restaurantes
                 )
     
 
-        # Paises Cadastrados
+    # Paises Cadastrados
     country = len(data['name_country'].unique())
     col3.metric(label = "Paises Cadastrados",
                 value= country
                 )
     
 
-        # Cidades cadastradas
+    # Cidades cadastradas
     city = len(data['city'].unique())
     col4.metric(label = "Cidades Cadastrados",
                 value= city
                 )
     
-            # Cidades cadastradas
+    # Cidades cadastradas
     city = len(data['cuisines'].unique())
     col5.metric(label = "Culinárias oferecidas",
                 value= city
                 )
 
 def map(data):
-    f = folium.Figure(width=1024 , height=768)
+    f = folium.Figure(width=740, height = 360)
 
     m = folium.Map(max_bounds=True).add_to(f)
 
@@ -81,10 +81,4 @@ def map(data):
             icon=folium.Icon(color=color, icon="home", prefix="fa"),
         ).add_to(marker_cluster)
 
-    folium_static(m, width=1024, height=768)
-
-def filtro_lateral(data):
-    with st.sidebar:
-        st.header('Home Page')
-        
-    return data
+    folium_static(m, width=740, height = 360)
